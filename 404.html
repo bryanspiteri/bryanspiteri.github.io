@@ -1,115 +1,153 @@
 <!DOCTYPE HTML>
-<html>
+<html xml:lang="en" lang="en">
+	<head>
+		<title>Bryan's Portfolio</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-	<title>Oops... | Bryan's Portfolio</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="/portfolio/assets/css/main.css" />
-	<noscript><link rel="stylesheet" href="/portfolio/assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/main.css" />
+		
+		<!--Favicons-->
+		<link rel="shortcut icon" href="images/favicon/favicon.ico">
+		<link rel="icon" sizes="16x16 32x32 64x64" href="images/favicon/favicon.ico">
+		<link rel="icon" type="image/png" sizes="196x196" href="images/favicon/favicon-192.png">
+		<link rel="icon" type="image/png" sizes="160x160" href="images/favicon/favicon-160.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96.png">
+		<link rel="icon" type="image/png" sizes="64x64" href="images/favicon/favicon-64.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16.png">
+		<link rel="apple-touch-icon" href="images/favicon/favicon-57.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/favicon-114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/favicon-72.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/favicon-144.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/favicon-60.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/favicon-120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/favicon-76.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/favicon-152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/favicon-180.png">
+		<meta name="msapplication-TileColor" content="#FFFFFF">
+		<meta name="msapplication-TileImage" content="images/favicon/favicon-144.png">
+		<meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+		
+		<meta name="keywords" content="Graphics, vulkan, programming, programmer, game, dev, developer, development, shaders, directx, d3d11, dx, gl, ogl, opengl, glsl, hlsl, spirv, c#, csharp, dotnet, .net">
+		<meta name="robots" content="INDEX,FOLLOW">
 
-	<!--Favicons-->
-	<link rel="shortcut icon" href="/portfolio/images/favicon/favicon.ico">
-	<link rel="icon" sizes="16x16 32x32 64x64" href="/portfolio/images/favicon/favicon.ico">
-	<link rel="icon" type="image/png" sizes="196x196" href="/portfolio/images/favicon/favicon-192.png">
-	<link rel="icon" type="image/png" sizes="160x160" href="/portfolio/images/favicon/favicon-160.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/portfolio/images/favicon/favicon-96.png">
-	<link rel="icon" type="image/png" sizes="64x64" href="/portfolio/images/favicon/favicon-64.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/portfolio/images/favicon/favicon-32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/portfolio/images/favicon/favicon-16.png">
-	<link rel="apple-touch-icon" href="/portfolio/images/favicon/favicon-57.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/portfolio/images/favicon/favicon-114.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/portfolio/images/favicon/favicon-72.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/portfolio/images/favicon/favicon-144.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/portfolio/images/favicon/favicon-60.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/portfolio/images/favicon/favicon-120.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/portfolio/images/favicon/favicon-76.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/portfolio/images/favicon/favicon-152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/portfolio/images/favicon/favicon-180.png">
-	<meta name="msapplication-TileColor" content="#FFFFFF">
-	<meta name="msapplication-TileImage" content="/portfolio/images/favicon/favicon-144.png">
-	<meta name="msapplication-config" content="/portfolio/images/favicon/browserconfig.xml">
-	
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="Bryan's Portfolio" />
-	<meta property="og:description" content="I am a C# / .NET developer, with a primary focus on game development, and front end application design." />
-	<meta property="og:url" content="https://hyblocker.github.io/portfolio" />
-</head>
-
-<body class="is-preload">
-
-	<!-- Page Wrapper -->
-	<div id="page-wrapper">
-
-		<!-- Header -->
-		<header id="header">
-			<h1>
-				<a href="/portfolio/index.html">
-				My Portfolio
-				<span class="seperator">  |  </span>
-				<span class="name">Bryan Spiteri</span>
-				</a>
-			</h1>
+		<meta property="description" content="Bryan's Portfolio | Graphics programming is my passion" />
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Bryan's Portfolio" />
+		<meta property="og:description" content="Graphics programming is my passion" />
+		<meta property="og:url" content="https://hyblocker.github.io/portfolio" />
+	</head>
+	<body>
+		<section class="welcome">
+			<video autoplay muted loop>
+				<source src="assets/reel.mp4" type="video/mp4">
+				<source src="assets/reel.webm" type="video/webm">
+				<source src="assets/reel.ogv" type="video/ogg">
+			</video>
+			<div class="intro-root">
+				<p class="intro" aria-label="I'm Bryan, and I like graphics programming">I'm Bryan, and I like</p>
+				<br>
+				<p class="intro hidden noselect">&#8203;</p>
+				<p class="intro dynamic" aria-label="graphics programming">graphics programming</p>
+				<span class="intro dynamic blink noselect nodraw">_</span>
+			</div>
+		</section>
+		
+		<section class="work">
 			
-		</header>
+			<h1 class="title pop-in" aria-label="Projects that I have worked on">Projects I've worked on</h1>
 
-		<!-- Banner -->
-		<section id="banner">
-			<div class="inner">
-				<div class="logo"><span class="icon fa-code"></span></div>
-				<h2>My Portfolio</h2>
-				<p>I am a C# / .NET developer, with a primary focus on game development, and front end application design.</p>
-			</div>
-		</section>
+			<div class="container">
+				<div class="project">
+					<img class="preview" src="images/raytracer/thumb.png" alt="Raytracer" />
+					<div class="caption">
+						<h1>CPU Raytracer</h1>
+						<a class="link code" href="https://github.com/bryanspiteri/cpu-raytracer" target="_blank">
+							<i class="material-icons-outlined">code</i>
+							<span>View Code</span>
+						</a>
+					</div>
+				</div>
 
-		<!-- Wrapper -->
-		<section id="wrapper">
-			<!-- Content -->
-			<div class="wrapper">
-				<div class="inner">
+				<div class="project">
+					<img class="preview" src="images/fluent/thumb.jpg" alt="Fluent UI" />
+					<div class="caption">
+						<h1>Fluent UI</h1>
+						<h2>MonoGame, C#, DirectX11</h2>
+					</div>
+				</div>
 
-					<section class="features">
-						<article class="videoPlayer">
-							<h3 class="videoTitle major">How did we get here?</h2>
-								<p class="videoDescription">It seems you have wandered to the abyss.<br><br>Code 404: Page Not Found</p>
-								<a href="/portfolio/index.html" class="specialalt">Back to Portfolio</a>
-						</article>
-					</section>
+				<div class="project">
+					<img class="preview" src="images/liquidshader/thumb.jpg" alt="Liquid Shader" />
+					<div class="caption">
+						<h1>Liquid Shader</h1>
+						<h2>HLSL</h2>
+					</div>
+				</div>
 
+				<div class="project">
+					<img class="preview" src="images/voxelgame/thumb.jpg" alt="Voxelgame" />
+					<div class="caption">
+						<h1>Voxelgame</h1>
+						<h2>MonoGame, C#, OpenGL</h2>
+						<a class="link code" href="https://github.com/bryanspiteri/voxelgame-opensource" target="_blank">
+							<i class="material-icons-outlined">code</i>
+							<span>View Code</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="project">
+					<img class="preview" src="images/modeleditor/thumb.jpg" alt="Model Editor" />
+					<div class="caption">
+						<h1>Model Editor</h1>
+						<h2>MonoGame, C#, OpenGL</h2>
+					</div>
+				</div>
+
+				<div class="project">
+					<img class="preview" src="images/spirv/thumb.jpg" alt="SPIRV Reflect Sharp" />
+					<div class="caption">
+						<h1>SPIRV-Reflect-Sharp</h1>
+						<h2>C# wrapper for SPIRV-Reflect</h2>
+						<a class="link code" href="https://github.com/hyblocker/spirv-reflect-sharp" target="_blank">
+							<i class="material-icons-outlined">code</i>
+							<span>View Code</span>
+						</a>
+					</div>
 				</div>
 			</div>
 
 		</section>
 
-		<!-- Footer -->
-			<section id="footer">
-				<div class="inner">
-					<h2 class="major">Get in touch</h2>
-					<p>If you are interested with talking to me, contact me via email, or via my social media.</p>
-					<ul class="contact">
-						<li class="icon solid fa-envelope"><a href="mailto:bryan.spiteri@gmail.com">bryan.spiteri@gmail.com</a></li>
-						<li class="icon brands fa-github"><a href="https://github.com/bryanspiteri" target="_blank">GitHub</a></li>
-					</ul>
-					<ul class="contact">
-						<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/bryan-spiteri-b55813194" target="_blank">LinkedIn</a></li>
-						<li class="icon brands fa-youtube"><a href="https://www.youtube.com/channel/UC9xbO8yzrvsrQzfJFWHoYgA" target="_blank">YouTube</a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Bryan Spiteri 2020</li>
-					</ul>
-				</div>
-			</section>
+		<section class="aboutme">
+			<h1 aria-label="About me" class="title pop-in">About me</h1>
+			<p class="about">
+				My name is Bryan Spiteri, and I have a passion towards graphics programming.
+				I've been programming for the majority of my life and have always had a particular interest towards game development.
+				I have experience writing game engines using the MonoGame framework,
+				and I am currently in the process of learning C++ and Vulkan.
+			</p>
+		</section>
 
-	</div>
+		<section class="contact">
+			<h1 aria-label="Contact me" class="title pop-in">Contact me</h1>
+			<a class="mail" href="mailto:bryan.spiteri@gmail.com">
+				<i class="material-icons-outlined">send</i>
+				<span>Send an email</span>
+			</a>
+			<a class="github" href="https://www.github.com/bryanspiteri">
+				<i class="github">aaa</i>
+				<span>GitHub</span>
+			</a>
+		</section>
 
-	<!-- Scripts -->
-	<script src="/portfolio/assets/js/jquery.min.js"></script>
-	<script src="/portfolio/assets/js/jquery.scrollex.min.js"></script>
-	<script src="/portfolio/assets/js/browser.min.js"></script>
-	<script src="/portfolio/assets/js/breakpoints.min.js"></script>
-	<script src="/portfolio/assets/js/util.js"></script>
-	<script src="/portfolio/assets/js/main.js"></script>
+		<section class="footer">
+			<span class="copyright" aria-label="Copyright Bryan Spiteri; 2020 to 2021">Copyright &copy; Bryan Spiteri 2020 - 2021</span>
+		</section>
 
-</body>
-
+		<script src="assets/main.js"></script>
+		<script src="assets/l10n.js"></script>
+	</body>
 </html>
