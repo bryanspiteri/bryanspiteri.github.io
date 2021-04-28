@@ -5,7 +5,12 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link rel="stylesheet" href="/assets/main.css" />
+		<!-- inline css for spid -->
+		<style>::selection{background-color:rgb(77 198 245 / 40%)}body,html,input{font-family:manrope vf,Manrope,-apple-system,BlinkMacSystemFont,Roboto,helvetica neue,sans-serif;font-variation-settings:'wght' 500;font-size:calc(.18779vw + 11.29577px);margin:0;max-width:100vw;width:100vw;overflow:overlay}h1{margin:0}*{-webkit-font-smoothing:antialiased;font-smoothing:antialiased;text-rendering:optimizeLegibility;letter-spacing:calc(-.03058em + .44638px);font-weight:600;scroll-behavior:smooth}.intro{font-size:3.2665733037em;line-height:1em;text-align:left;margin:0 0 0 15vw;color:#f7f7f7}.intro.dynamic{color:#ffffa9;display:inline-block;float:left;margin:0}.intro.hidden{color:#ffffa9;display:inline-block;float:left}.intro.blink{margin:0;animation:blink-animation 1.24s steps(5, start) infinite;-webkit-animation:blink-animation 1.24s steps(5, start) infinite}.intro-root{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);width:100%;text-align:center}.welcome{width:100vw;height:100vh;overflow:hidden}.welcome video{transform:translate(calc(-50% + 50vw), calc(-50% + 50vh));right:0;bottom:0;min-width:100%;min-height:100%;z-index:-1}@media screen and (max-width: 1000px){.intro{font-size:2.2665733037em}}@media screen and (max-width: 361px){.intro{font-size:1.5665733037em;line-height:0.5em}}@-moz-document url-prefix(){body{overflow-x:hidden;overflow-y:scroll}}</style>
+
+		<link link rel="preload" href="/assets/main.css"/ as="style">
+		<link rel="preload" href="/assets/fonts/web/MaterialIconsOutlined-Regular.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="/assets/fonts/web/MaterialIconsOutlined-Regular.otf" as="font" type="font/otf" crossorigin>
 		
 		<!--Favicons-->
 		<link rel="shortcut icon" href="/images/favicon/favicon.ico">
@@ -25,7 +30,7 @@
 		<link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/favicon-76.png">
 		<link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/favicon-152.png">
 		<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/favicon-180.png">
-		
+
 		<meta name="theme-color" content="#0094FF">
 		<meta name="msapplication-TileColor" content="#0094FF">
 		<meta name="msapplication-TileImage" content="/images/favicon/favicon-144.png">
@@ -37,12 +42,13 @@
 		<meta property="description" content="Bryan's Portfolio | Graphics programming is my passion" />
 		<meta property="og:type" content="website">
 		<meta property="og:title" content="Bryan's Portfolio" />
+		<meta property="og:url" content="bryanspiteri.github.io" />
 		<meta property="og:description" content="Graphics programming is my passion" />
-		<meta property="og:url" content="https://hyblocker.github.io/portfolio" />
+		<meta name="description" content="Graphics programming is my passion" />
 	</head>
 	<body>
 		<section class="welcome">
-			<video autoplay muted loop>
+			<video autoplay muted loop poster="/assets/poster.jpg">
 				<source src="/assets/reel.mp4" type="video/mp4">
 				<source src="/assets/reel.webm" type="video/webm">
 				<source src="/assets/reel.ogv" type="video/ogg">
@@ -62,10 +68,10 @@
 
 			<div class="container">
 				<div class="project" onclick="">
-					<img class="preview" src="/images/raytracer/thumb.png" alt="Raytracer" />
+					<img class="preview" src="/images/raytracer/thumb.jpg" alt="Raytracer" />
 					<div class="caption">
 						<h1>CPU Raytracer</h1>
-						<a class="link code" href="https://github.com/bryanspiteri/cpu-raytracer" target="_blank">
+						<a class="link code" href="https://github.com/bryanspiteri/cpu-raytracer" rel="noreferrer" target="_blank">
 							<i class="material-icons-outlined">code</i>
 							<span>View Code</span>
 						</a>
@@ -93,7 +99,7 @@
 					<div class="caption">
 						<h1>Voxelgame</h1>
 						<h2>MonoGame, C#, OpenGL</h2>
-						<a class="link code" href="https://github.com/bryanspiteri/voxelgame-opensource" target="_blank">
+						<a class="link code" href="https://github.com/bryanspiteri/voxelgame-opensource" rel="noreferrer" target="_blank">
 							<i class="material-icons-outlined">code</i>
 							<span>View Code</span>
 						</a>
@@ -113,7 +119,7 @@
 					<div class="caption">
 						<h1>SPIRV-Reflect-Sharp</h1>
 						<h2>C# wrapper for SPIRV-Reflect</h2>
-						<a class="link code" href="/https://github.com/hyblocker/spirv-reflect-sharp" target="_blank">
+						<a class="link code" href="/https://github.com/hyblocker/spirv-reflect-sharp" rel="noreferrer" target="_blank">
 							<i class="material-icons-outlined">code</i>
 							<span>View Code</span>
 						</a>
@@ -139,7 +145,7 @@
 				<i class="material-icons-outlined">send</i>
 				<span>Send an email</span>
 			</a>
-			<a class="github" href="https://www.github.com/bryanspiteri">
+			<a class="github" href="https://www.github.com/bryanspiteri" rel="noreferrer" target="_blank">
 				<i class="github">aaa</i>
 				<span>GitHub</span>
 			</a>
@@ -150,6 +156,6 @@
 		</section>
 
 		<script src="/assets/main.js"></script>
-		<script src="/assets/l10n.js"></script>
+		<!--<script src="/assets/l10n.js"></script>-->
 	</body>
 </html>
