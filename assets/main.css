@@ -162,8 +162,6 @@ h2 {
 }
 .welcome video {
 	transform: translate(calc(-50% + 50vw), calc(-50% + 50vh));
-	right: 0;
-    bottom: 0;
 	min-width: 100%;
 	min-height: 100%;
 	z-index: -1;
