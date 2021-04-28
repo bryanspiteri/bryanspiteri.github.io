@@ -118,8 +118,8 @@ h2 {
 
 
 .intro {
-	font-size: calc(3.94366vw + 23.21127px);
-	line-height: calc(3.94366vw + 23.21127px);
+	font-size: 3.2665733037em;
+	line-height: 1em;
 	text-align: left;
 	margin: 0 0 0 15vw;
 	color: #f7f7f7;
@@ -158,8 +158,9 @@ h2 {
 	overflow: hidden;
 }
 .welcome video {
-	right: 0;
-	bottom: 0;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 	min-width: 100%;
 	min-height: 100%;
 	z-index: -1;
@@ -430,18 +431,26 @@ a:hover, a:active, a:focus {
 }
 
 /* mobile css */
-
-/* hide blinking caret on phones because im too lazy to fix wordwrap */
 @media screen and (max-width: 1000px) {
+
+	/* smaller intro font size on mobile */
+	.intro {
+		font-size: 2.2665733037em;
+	}
+	/* fixed??
+	hide blinking caret on phones because im too lazy to fix wordwrap 
 	.intro.blink {
 		display: none;
 	}
+	*/
+	/* center view code link */
 	.caption .link.code {
 		left: calc(50vw - (5.75rem + 2px));
 	}
 	.caption .link.code:lang(it) {
 		left: calc(50vw - (8.75rem + 2px));
 	}
+	/* one column in carousel rather than 2 */
 	.caption h1 {
 		font-size: 2.3894291102118608em;
 	}
@@ -453,6 +462,14 @@ a:hover, a:active, a:focus {
 		height: calc(100vw * 0.5625);
 	}
 }
+/* tiny af screens */
+@media screen and (max-width: 361px) {
+	.intro {
+		font-size: 1.5665733037em;
+		line-height: 0.5em;
+	}
+}
+
 
 /* override scroll bars on firefox */
 @-moz-document url-prefix() {
