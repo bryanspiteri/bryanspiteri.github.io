@@ -1,5 +1,1 @@
-User-agent: *
-Disallow: /lite
-Disallow: /html
-
 Sitemap: https://bryanspiteri.github.io/sitemap.xml
